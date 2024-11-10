@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup_page</title>
+    <link rel="stylesheet" href="index_page.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            
+            background: radial-gradient( #103054, #000000);
+            height: 100vh;
+        }
+        .first_div {
+    /* border: 2px solid black; */
+    height: 50px;
+    margin-top: 30px;
+    overflow: hidden;
+    background-color: #0A1828;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.first_p {
+    float: left;
+    font-size: x-large;
+    margin-top: 12px;
+    margin-left: 50px;
+    
+}
+
+.first_p img {
+    height: 20px;
+}
+
+.first_div a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+.first_div a:hover {
+    background-color: #06213f;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.first_div input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    margin-right: 50px;
+}
+.form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin-top: 40px;
+            margin-left: 450px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .form-container h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input[type="file"] {
+            padding: 3px;
+        }
+        .form-group input[type="radio"] {
+            width: auto;
+        }
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        .form-group input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="first_div">
+        <p class="first_p"> GameDrop</p>
+        <a href="website.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        <a href="about.html"><i class="fa fa-users" aria-hidden="true"></i> About</a>
+        <a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+        <a href="signup.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Signup</a>
+        <a href="install.html"><i class="fa fa-download" aria-hidden="true"></i> Install</a>
+        <input type="text" placeholder=" Search..">
+        
+    </div>
+    
+    <div class="form-container">
+        <h1>Sign up</h1>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="password">
+            </div>
+            <div class="form-group">
+                <label for="password"> Confirm Password:</label>
+                <input type="password" id="password" name="password" placeholder="confirm password">
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" placeholder="eg:-example@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <input href="website.html" type="submit" value="Sign up">
+            </div>
+            <div class="form-group">
+                <a href="login.html">Already have an account?</a>
+            </div>
+        </form>
+
+</body>
+</html>
